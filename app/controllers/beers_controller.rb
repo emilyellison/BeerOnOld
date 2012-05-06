@@ -5,6 +5,12 @@ class BeersController < ApplicationController
     @beers = Beer.all
     @search_beers = @search.all
     @beer_pick = @search_beers.shuffle.first
+    
+    bitly = Shortly::Clients::Bitly
+    bitly.apiKey  = 'R_9859059b3875c393be12684d975f0aa7'
+    bitly.login   = 'emilyellison986'
+    short_beers_url = bitly.shorten(beers_url).url
+    render short_beers_url
   end
   
   def show
