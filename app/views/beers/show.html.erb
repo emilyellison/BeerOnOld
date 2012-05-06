@@ -8,10 +8,13 @@
 	<br/><br>
 	<p>Body: <%= @beer.body.capitalize %></p>
 	<p>Style: 
-		<% if @beer.belgian == 1 %>
+		<% if @beer.belgian == 1 && @beer.style.present? %>
 			Belgian-Style <%= @beer.style.capitalize %>
-		<% else %>
+		<% elsif @beer.style.present? %>
 			<%= @beer.style.capitalize %>
+		<% elsif @beer.belgian == 1 %>
+			Belgian
+		<% else %>
 		<% end %>
 	</p>
 	<p>Textures:<p>
