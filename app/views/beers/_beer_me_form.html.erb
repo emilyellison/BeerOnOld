@@ -1,10 +1,10 @@
-<% bitly = Shortly::Clients::Bitly %>
-<% bitly.apiKey  = 'R_9859059b3875c393be12684d975f0aa7' %>
-<% bitly.login   = 'emilyellison986' %>
-<% short_beers_url = bitly.shorten(beers_url).url %>
+<%# bitly = Shortly::Clients::Bitly %>
+<%# bitly.apiKey  = 'R_9859059b3875c393be12684d975f0aa7' %>
+<%# bitly.login   = 'emilyellison986' %>
+<%# short_beers_url = bitly.shorten(beers_url).url %>
 <!-- Insert short_beers_url below...?? -->
 
-<%= form_for @search, :url => short_beers_url, :html => { :method => :get } do |f| %>
+<%= form_for @search, :url => beers_url, :html => { :method => :get } do |f| %>
 	<div class='span2'>
 		<h3>Texture</h3>
 		<br/>
