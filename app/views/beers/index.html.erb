@@ -1,0 +1,19 @@
+<div class='span12'>
+	<h2>Get Your BeerOn.</h2>
+	<br/><br/>
+</div>
+
+<%= render 'beers/beer_me_form' %>
+
+<div class='span12'>
+<h3>
+	<br/>
+	<% if @beers.count == @search_beers.count %>	
+
+	<% elsif !@search_beers.empty? %>
+		I would recommend a <%= link_to @beer_pick.name, beer_url(@beer_pick.id) %>.
+	<% else %>
+		Sorry, there are no beers that match your requirements.
+	<% end %>
+</h3>
+</div>

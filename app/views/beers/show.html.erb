@@ -1,0 +1,43 @@
+<div class='span12'>
+	<h2><%= @beer.name %> (<%= @beer.abv %>%)</h2>
+	<br/><br/>
+</div>
+<div class='span12'>
+	<h3><%= @beer.brewer %></h3>
+	<h3><%= @beer.city %>, <%= @beer.state %>, <%= @beer.country %></h3>
+	<br/><br>
+	<p>Body: <%= @beer.body.capitalize %></p>
+	<p>Style: 
+		<% if @beer.belgian == 1 %>
+			Belgian-Style <%= @beer.style.capitalize %>
+		<% else %>
+			<%= @beer.style.capitalize %>
+		<% end %>
+	</p>
+	<p>Textures:<p>
+	<ul>
+		<% @textures.each do |texture, value| %>
+			<% if value == 1 %>
+				<li><%= texture.capitalize %></li>
+			<% end %>	
+		<% end %>
+	</ul>
+	<p>Flavors:<p>
+	<ul>
+		<% @flavors.each do |flavor, value| %>
+			<% if value == 1 %>
+				<li><%= flavor.capitalize %></li>
+			<% end %>	
+		<% end %>
+	</ul>
+	<p>Notes:<p>
+	<ul>
+		<% @notes.each do |note, value| %>
+			<% if value == 1 %>
+				<li><%= note.capitalize %></li>
+			<% end %>	
+		<% end %>
+	</ul>	
+	<br/>
+	<p>Disagree with this description? <%= link_to 'E-mail us!', '#' %></p>
+</div>

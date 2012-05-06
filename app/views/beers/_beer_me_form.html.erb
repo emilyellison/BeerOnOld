@@ -1,0 +1,111 @@
+
+<%= form_for @search, :url => beers_url, :html => { :method => :get } do |f| %>
+	<div class='span2'>
+		<h3>Texture</h3>
+		<br/>
+		<%= f.label :acidic_is_present, 'Acidic', :class => 'btn', :id => 'label_acidic_is_present' %>
+		<%= f.check_box :acidic_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :clean_is_present, 'Clean', :class => 'btn', :id => 'label_clean_is_present' %>
+		<%= f.check_box :clean_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :creamy_is_present, 'Creamy', :class => 'btn', :id => 'label_creamy_is_present' %>
+		<%= f.check_box :creamy_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :crisp_is_present, 'Crisp', :class => 'btn', :id => 'label_crisp_is_present' %>
+		<%= f.check_box :crisp_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :hoppy_is_present, 'Hoppy', :class => 'btn', :id => 'label_hoppy_is_present' %>
+		<%= f.check_box :hoppy_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :malty_is_present, 'Malty', :class => 'btn', :id => 'label_malty_is_present' %>
+		<%= f.check_box :malty_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :rich_is_present, 'Rich', :class => 'btn', :id => 'label_rich_is_present' %>
+		<%= f.check_box :rich_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :smooth_is_present, 'Smooth', :class => 'btn', :id => 'label_smooth_is_present' %>
+		<%= f.check_box :smooth_is_present, :style => 'visibility: hidden' %><br/><br/>
+	</div>
+	<div class='span2'>
+		<h3>Flavor</h3>
+		<br/>	
+		<%= f.label :bitter_is_present, 'Bitter', :class => 'btn', :id => 'label_bitter_is_present' %>
+		<%= f.check_box :bitter_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :earthy_is_present, 'Earthy', :class => 'btn', :id => 'label_earthy_is_present' %>
+		<%= f.check_box :earthy_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :sour_is_present, 'Sour', :class => 'btn', :id => 'label_sour_is_present' %>
+		<%= f.check_box :sour_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :spicy_is_present, 'Spicy', :class => 'btn', :id => 'label_spicy_is_present' %>
+		<%= f.check_box :spicy_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :sweet_is_present, 'Sweet', :class => 'btn', :id => 'label_sweet_is_present' %>
+		<%= f.check_box :sweet_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :tart_is_present, 'Tart', :class => 'btn', :id => 'label_tart_is_present' %>
+		<%= f.check_box :tart_is_present, :style => 'visibility: hidden' %><br/><br/>
+	</div>
+	<div class='span2'>
+		<h3>Notes</h3>
+		<br/>
+		<%= f.label :banana_is_present, 'Banana', :class => 'btn', :id => 'label_banana_is_present' %>
+		<%= f.check_box :banana_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :caramel_is_present, 'Caramel', :class => 'btn', :id => 'label_caramel_is_present' %>
+		<%= f.check_box :caramel_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :citrus_is_present, 'Citrus', :class => 'btn', :id => 'label_citrus_is_present' %>
+		<%= f.check_box :citrus_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :chocolate_is_present, 'Chocolate', :class => 'btn', :id => 'label_chocolate_is_present' %>
+		<%= f.check_box :chocolate_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :cloves_is_present, 'Cloves', :class => 'btn', :id => 'label_cloves_is_present' %>
+		<%= f.check_box :cloves_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :coffee_is_present, 'Coffee', :class => 'btn', :id => 'label_coffee_is_present' %>
+		<%= f.check_box :coffee_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :floral_is_present, 'Floral', :class => 'btn', :id => 'label_floral_is_present' %>
+		<%= f.check_box :floral_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :fruity_is_present, 'Fruity', :class => 'btn', :id => 'label_fruity_is_present' %>
+		<%= f.check_box :fruity_is_present, :style => 'visibility: hidden' %><br/><br/>
+	</div>
+	<div class='span2'>
+		<h3>&nbsp;</h3>
+		<br/>
+		<%= f.label :grapefruit_is_present, 'Grapefruit', :class => 'btn', :id => 'label_grapefruit_is_present' %>
+		<%= f.check_box :grapefruit_is_present, :style => 'visibility: hidden' %><br/><br/>		
+		<%= f.label :lemon_is_present, 'Lemon', :class => 'btn', :id => 'label_lemon_is_present' %>
+		<%= f.check_box :lemon_is_present, :style => 'visibility: hidden' %><br/><br/>		
+		<%= f.label :nutty_is_present, 'Nutty', :class => 'btn', :id => 'label_nutty_is_present' %>
+		<%= f.check_box :nutty_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :pine_is_present, 'Pine', :class => 'btn', :id => 'label_pine_is_present' %>
+		<%= f.check_box :pine_is_present, :style => 'visibility: hidden' %><br/><br/>	
+		<%= f.label :smoky_is_present, 'Smoky', :class => 'btn', :id => 'label_smoky_is_present' %>
+		<%= f.check_box :smoky_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :toffee_is_present, 'Toffee', :class => 'btn', :id => 'label_toffee_is_present' %>
+		<%= f.check_box :toffee_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :vanilla_is_present, 'Vanilla', :class => 'btn', :id => 'label_vanilla_is_present' %>
+		<%= f.check_box :vanilla_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.label :wheat_is_present, 'Wheat', :class => 'btn', :id => 'label_wheat_is_present' %>
+		<%= f.check_box :wheat_is_present, :style => 'visibility: hidden' %><br/><br/>
+	</div>
+	<div class='span2'>
+	<h3>&nbsp;</h3><br/>
+	<%= f.select(:body_contains, 	[
+															 	[ 'Body', nil ],
+															 	[ 'Light', 'light'],
+															 	[ 'Medium', 'medium'],
+																[ 'Dark', 'dark'] ], class: 'select-box') %>
+	<br/>
+	<%= f.select(:style_contains, [
+															 	[ 'Style', nil ],
+															 	[ 'Amber', 'amber'],
+																[ 'Blonde', 'blonde'],
+																[ 'Dubbel', 'dubbel'],
+																[ 'Farmhouse', 'farmhouse'],
+																[ 'Golden', 'golden'],
+																[ 'Hefeweizen', 'hefeweizen'],
+																[ 'IPA', 'ipa'],
+																[ 'Pale Ale', 'pale ale'],
+																[ 'Pilsner', 'pilsner'],
+																[ 'Porter', 'porter'],
+																[ 'Red', 'red'],
+																[ 'Stout', 'stout'],
+																[ 'Trippel', 'trippel'], 
+																[ 'Wheat', 'wheat'] ], class: 'select-box') %>
+	<br/>
+	</div>
+	<div class='span12'>
+	<br/>
+	<%= f.submit 'Beer Me', :class => 'btn btn-primary' %><span class='alternative'>&nbsp;&nbsp;or&nbsp;&nbsp;</span>
+	<%= link_to 'Reset this form', beers_url, :class => 'btn' %>
+	
+<% end %>
+</div>
