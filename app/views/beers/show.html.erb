@@ -9,9 +9,17 @@
 	<p>Body: <%= @beer.body.capitalize %></p>
 	<p>Style: 
 		<% if @beer.belgian == 1 && @beer.style.present? %>
-			Belgian-Style <%= @beer.style.capitalize %>
+			<% if @beer.style = 'ipa' %>
+				Belgian-Style IPA
+			<% else %>
+				Belgian-Style <%= @beer.style.capitalize %>
+			<% end %>
 		<% elsif @beer.style.present? %>
-			<%= @beer.style.capitalize %>
+			<% if @beer.style = 'ipa' %>
+				IPA
+			<% else %>
+				<%= @beer.style.capitalize %>
+			<% end %>
 		<% elsif @beer.belgian == 1 %>
 			Belgian
 		<% else %>
