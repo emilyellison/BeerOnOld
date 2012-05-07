@@ -1,19 +1,32 @@
 <div class='span12'>
-	<h2>Get Your BeerOn.</h2>
+	<h2>Beer Index</h2>
 	<br/><br/>
-</div>
-
-<%= render 'beers/beer_me_form' %>
-
-<div class='span12'>
-<h3>
-	<br/>
-	<% if @beers.count == @search_beers.count %>	
-
-	<% elsif !@search_beers.empty? %>
-		Try a <%= link_to @beer_pick.name, beer_url(@beer_pick.id) %>.
-	<% else %>
-		Sorry, there are no beers that match your requirements.
-	<% end %>
-</h3>
+	<table class='table table-striped'>
+		<tr>
+			<th>Beer</th>
+			<th>Brewer</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Style</th>
+			<th>Body</th>
+			<th>ABV</th>
+		</tr>
+		<% @beers.each do |beer| %>
+		<tr>
+			<td><%= link_to beer.name, beer_url(beer.id) %></td>
+			<td><%= beer.brewer %></td>
+			<td><%= beer.city %></td>
+			<td><%= beer.state %></td>
+			<% if beer.style == 'ipa' %>
+				<td>IPA</td>
+			<% elsif beer.style.present? %>
+				<td><%= beer.style.capitalize %></td>
+			<% else %>
+				<td></td>
+			<% end %>
+			<td><%= beer.body.capitalize %></td>
+			<td><%= beer.abv %>%</td>
+		</tr>
+		<% end %>
+	</table>
 </div>

@@ -1,6 +1,6 @@
 class BeersController < ApplicationController
   
-  def index
+  def beer_me
     @search = Beer.search(params[:search])
     @beers = Beer.all
     @search_beers = @search.all
@@ -21,6 +21,10 @@ class BeersController < ApplicationController
                   :toffee => @beer.toffee, :vanilla => @beer.vanilla, :wheat => @beer.wheat, :cherry => @beer.cherry,
                   :raspberry => @beer.raspberry }
   end
+  
+  def index
+    @beers = Beer.all
 
-
+  end
+  
 end

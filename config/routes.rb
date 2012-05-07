@@ -1,6 +1,7 @@
 BeerOn::Application.routes.draw do
 
-  get '/', :controller => 'beers', :action => 'index', :as => 'beers'
+  get '/', :controller => 'beers', :action => 'beer_me', :as => 'beer_me'
+  get '/index', :controller => 'beers', :action => 'index', :as => 'beers'
   
   get '/help', :controller => 'static_pages', :action => 'help', :as => 'help'
   get '/about', :controller => 'static_pages', :action => 'about', :as => 'about'
