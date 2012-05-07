@@ -1,6 +1,16 @@
 <div class='span14'>
-	<h2>Beer Index</h2>
-	<br/><br/>
+	<h2>Find Your Favorite Beers</h2>
+	<br/>
+	<%= form_tag '/index', :method => :get do %>
+		<%= label_tag 'Beer' %>
+		<%= text_field_tag :name_query %>
+		<br/>
+		<%= label_tag 'Brewer' %>
+		<%= text_field_tag :brewer_query %>
+		<br/><br/>
+		<%= submit_tag 'Search', class: 'btn btn-primary' %>
+	<% end %>
+	<br/>
 	<table class='table table-striped'>
 		<tr>
 			<th>Beer</th>

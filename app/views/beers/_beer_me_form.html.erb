@@ -5,7 +5,10 @@
 		<h3>Texture</h3>
 		<br/>
 		<%= f.label :acidic_is_present, 'Acidic', :class => 'btn', :id => 'label_acidic_is_present' %>
-		<%= f.check_box :acidic_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<a href='#' rel='tooltip' title='Some text'>
+		<%= f.check_box :acidic_is_present, :style => 'visibility: hidden' %>
+		</a>
+		<br/><br/>
 		<%= f.label :clean_is_present, 'Clean', :class => 'btn', :id => 'label_clean_is_present' %>
 		<%= f.check_box :clean_is_present, :style => 'visibility: hidden' %><br/><br/>
 		<%= f.label :creamy_is_present, 'Creamy', :class => 'btn', :id => 'label_creamy_is_present' %>

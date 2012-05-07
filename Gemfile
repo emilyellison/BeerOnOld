@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem "meta_search", '1.1.3'
 gem "bootstrap-sass", "~> 2.0.2"
+gem 'bootstrap-tooltip-rails', '0.1'
 gem 'thin'
 	
 # gem 'shortly', '0.3.3'

@@ -1,6 +1,16 @@
 $(document).ready( function() {
 
-	//Textures
+	// Textures
+	$("#acidic_description").hide();
+	  $("#label_acidic_is_present").mouseover(function() {
+	       $("#acidic_description").show("slow");
+	  }).mouseout(function(){
+	       $("#acidic_description").hide("slow");
+	  });
+	
+	$(function(){
+	  $("a[rel='tooltip']").tooltip();
+	})
 
 	$("#search_acidic_is_present").change(function() {
 		 $("#label_acidic_is_present").toggleClass("btn-primary", this.checked)

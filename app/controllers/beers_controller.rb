@@ -23,7 +23,7 @@ class BeersController < ApplicationController
   end
   
   def index
-    @beers = Beer.all
+    @beers = Beer.index_search(params[:name_query], params[:brewer_query])
 
   end
   
