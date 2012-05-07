@@ -156,9 +156,24 @@ beer = Beer.new(:name => 'Allagash White', :brewer => 'Allagash Brewing Company'
                 :body => 'light', :style => 'wheat', :crisp => 1, :fruity => 1, :sweet => 1, :spicy => 1,
                 :citrus => 1, :wheat => 1, :belgian => 1 )
 beer.save
-
-
-
+beer = Beer.new(:name => 'Gaspar', :brewer => 'Picobrouwerij Alvinne', :city => 'Heule',
+                :state => 'West-Flandres', :region => 'West', :country => 'Belgium', :abv => 8.0,
+                :body => 'dark', :belgian => 1, :bitter => 1, :hoppy => 1, :creamy => 1, :malty => 1 )
+beer.save
+beer = Beer.new(:name => 'Extra IPA', :brewer => 'Picobrouwerij Alvinne', :city => 'Heule',
+                :state => 'West-Flandres', :region => 'West', :country => 'Belgium', :abv => 7.1,
+                :body => 'light', :style => 'ipa', :belgian => 1, :bitter => 1, :hoppy => 1 )
+beer.save
+beer = Beer.new(:name => 'Brother David\'s Double', :brewer => 'Anderson Valley Brewing Company', :city => 'Boonville',
+                :state => 'CA', :region => 'West', :country => 'USA', :abv => 9.0, :ibu => 27,
+                :body => 'dark', :style => 'trippel', :rich => 1, :malty => 1, :creamy => 1, :chocolate => 1,
+                :banana => 1, :fruity => 1, :sweet => 1, :belgian => 1 )
+beer.save
+beer = Beer.new(:name => 'Hop Ottin\'', :brewer => 'Anderson Valley Brewing Company', :city => 'Boonville',
+                :state => 'CA', :region => 'West', :country => 'USA', :abv => 7.0, :ibu => 80,
+                :body => 'medium', :style => 'ipa', :grapefruit => 1, :pine => 1, :citrus => 1, :floral => 1,
+                :malty => 1, :crisp => 1, :bitter => 1, :sweet => 1, :fruity => 1, :earthy => 1 )
+beer.save
 
 
 
