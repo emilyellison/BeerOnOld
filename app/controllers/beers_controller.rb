@@ -18,7 +18,8 @@ class BeersController < ApplicationController
                   :chocolate => @beer.chocolate, :cloves => @beer.cloves, :coffee => @beer.coffee, 
                   :floral => @beer.floral, :fruity => @beer.fruity, :grapefruit => @beer.grapefruit, 
                   :lemon => @beer.lemon, :nutty => @beer.nutty, :pine => @beer.pine, :smoky => @beer.smoky,
-                  :toffee => @beer.toffee, :vanilla => @beer.vanilla, :wheat => @beer.wheat }
+                  :toffee => @beer.toffee, :vanilla => @beer.vanilla, :wheat => @beer.wheat, :cherry => @beer.cherry,
+                  :raspberry => @beer.raspberry }
   end
 
 
