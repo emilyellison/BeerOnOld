@@ -1,14 +1,27 @@
-<%= form_for @inquiry, :url => '/' do |f| %>
+<div class='span12'>
+	<h2>Contact Us</h2>
+	<br/><br/>
+</div>
+<div class='span6'>
+	<h3>Have a question? Want more beer?</h3>
+	<p>Fill out the contact form below.</p><br/>
 
-	<%= f.label :name %>
-	<%= f.text_field :name %>
+	<%= form_for @inquiry, :url => '/' do |f| %>
 
-	<%= f.label :email %>
-	<%= f.text_field :email %>
+		<%= f.label :name %>
+		<%= f.text_field :name, :class => 'span4' %><br/><br/>
 
-	<%= f.label :message %>
-	<%= f.text_area :message %>
-<br/>
-	<%= f.submit 'E-mail me', :class => 'btn btn-primary' %>
+		<%= f.label :email, 'E-mail' %>
+		<%= f.text_field :email, :class => 'span4' %><br/><br/>
 
-<% end %>
+		<%= f.label :message %>
+		<%= f.text_area :message, :class => 'span4' %><br/><br/>
+
+		<%= f.submit 'E-mail Us', :class => 'btn btn-primary' %>
+
+	<% end %>
+</div>
+
+<div class='pull-right'>
+	<%= link_to image_tag('dark_beer.jpg', :size=>'330x255') %>
+</div>
