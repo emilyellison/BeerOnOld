@@ -4,6 +4,6 @@ class ContactMailer < ActionMailer::Base
   def contact_me(inquiry)
     @inquiry = inquiry
     @url = 'http://beeron.herokuapp.com'
-    mail(:from => inquiry.email, :subject => 'Help me please.')
+    mail(:from => inquiry.email, :subject => 'User Feedback')
   end
 end
