@@ -1,0 +1,14 @@
+<%= form_for @inquiry, :url => '/' do |f| %>
+
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+
+	<%= f.label :message %>
+	<%= f.text_area :message %>
+<br/>
+	<%= f.submit 'E-mail me', :class => 'btn btn-primary' %>
+
+<% end %>
