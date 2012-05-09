@@ -5,9 +5,14 @@
 		<h3>Texture</h3>
 		<br/>
 		<!--a href='#' rel='tooltip' title='Some text'-->
-		<%= f.label :acidic_is_present, 'Acidic', :class => 'btn', :id => 'label_acidic_is_present' %>
+		<%# if @search.acidic_is_present %>
+			<%= f.label :acidic_is_present, 'Acidic', :class => 'btn', :id => 'label_acidic_is_present' %>
+			<%= f.check_box :acidic_is_present, :style => 'visibility: hidden' %>
+		<%# else %>
+			<!--span class='btn disabled'>Acidic</span-->
+		<%# end %><br/><br/>
 		<!--/a-->
-		<%= f.check_box :acidic_is_present, :style => 'visibility: hidden' %><br/><br/>
+		
 		<%= f.label :clean_is_present, 'Clean', :class => 'btn', :id => 'label_clean_is_present' %>
 		<%= f.check_box :clean_is_present, :style => 'visibility: hidden' %><br/><br/>
 		<%= f.label :creamy_is_present, 'Creamy', :class => 'btn', :id => 'label_creamy_is_present' %>
@@ -15,7 +20,7 @@
 		<%= f.label :crisp_is_present, 'Crisp', :class => 'btn', :id => 'label_crisp_is_present' %>
 		<%= f.check_box :crisp_is_present, :style => 'visibility: hidden' %><br/><br/>
 		<%= f.label :hoppy_is_present, 'Hoppy', :class => 'btn', :id => 'label_hoppy_is_present' %>
-		<%= f.check_box :hoppy_is_present, :style => 'visibility: hidden' %><br/><br/>
+		<%= f.check_box :hoppy_is_present, :style => 'visibility: hidden' %><br/><br/>	
 		<%= f.label :malty_is_present, 'Malty', :class => 'btn', :id => 'label_malty_is_present' %>
 		<%= f.check_box :malty_is_present, :style => 'visibility: hidden' %><br/><br/>
 		<%= f.label :rich_is_present, 'Rich', :class => 'btn', :id => 'label_rich_is_present' %>
@@ -103,7 +108,9 @@
 																[ 'Stout', 'stout'],
 																[ 'Trippel', 'trippel'], 
 																[ 'Wheat', 'wheat'] ], class: 'select-box') %>
-	<br/>
+	<br/><br/>
+	<%= f.label :local_is_present, 'Drink Local', :class => 'btn', :id => 'label_local_is_present' %>
+	<%= f.check_box :local_is_present, :style => 'visibility: hidden' %><br/><br/>
 	</div>
 	<div class='span12'>
 	<br/>

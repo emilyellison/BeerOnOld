@@ -136,4 +136,8 @@ $(document).ready( function() {
 		 $("#label_wheat_is_present").toggleClass("btn-primary", this.checked)
 	}).change();
 	
+	$("#search_local_is_present").change(function() {
+		 $("#label_local_is_present").toggleClass("btn-primary", this.checked)
+	}).change();
+	
 });
