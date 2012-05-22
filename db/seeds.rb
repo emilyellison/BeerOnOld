@@ -56,7 +56,8 @@ beer = Beer.new(:name => 'Mother Jones Dry-Hopped Abbey Style Dubbel', :brewer =
 beer.save
 beer = Beer.new(:name => 'Aleister Double American IPA', :brewer => 'Haymarket Brewery', :city => 'Chicago',
                 :state => 'IL', :region => 'Midwest', :country => 'USA', :abv => 8.0,
-                :body => 'light', :style => 'ipa', :hoppy => 1, :citrus => 1, :sweet => 1, :fruity => 1, :local => 1)
+                :body => 'light', :style => 'ipa', :hoppy => 1, :citrus => 1, :sweet => 1, :fruity => 1, :clean => 1,
+                :local => 1)
 beer.save
 beer = Beer.new(:name => 'Girl and the Goatee Belgian Strong Dark Ale', :brewer => 'Haymarket Brewery', :city => 'Chicago',
                 :state => 'IL', :region => 'Midwest', :country => 'USA', :abv => 7.3,
@@ -64,9 +65,9 @@ beer = Beer.new(:name => 'Girl and the Goatee Belgian Strong Dark Ale', :brewer 
 beer.save
 beer = Beer.new(:name => 'Mathias Imperial IPA', :brewer => 'Haymarket Brewery', :city => 'Chicago',
                 :state => 'IL', :region => 'Midwest', :country => 'USA', :abv => 10.0,
-                :body => 'light', :style => 'ipa', :hoppy => 1, :citrus => 1, :sweet => 1, :fruity => 1, :local => 1 )
+                :body => 'medium', :style => 'ipa', :hoppy => 1, :citrus => 1, :bitter => 1, :fruity => 1, 
+                :clean => 1, :local => 1 )
 beer.save
-# Bieber has banana too
 beer = Beer.new(:name => 'Bieber\'s Banana Hammock Hefeweizen', :brewer => 'Haymarket Brewery', :city => 'Chicago',
                 :state => 'IL', :region => 'Midwest', :country => 'USA', :abv => 5.0,
                 :body => 'light', :style => 'hefeweizen', :wheat => 1, :cloves => 1, :fruity => 1, 
@@ -74,7 +75,8 @@ beer = Beer.new(:name => 'Bieber\'s Banana Hammock Hefeweizen', :brewer => 'Haym
 beer.save
 beer = Beer.new(:name => 'Hogbutcher Belgian IPA', :brewer => 'Haymarket Brewery', :city => 'Chicago',
                 :state => 'IL', :region => 'Midwest', :country => 'USA', :abv => 7.5,
-                :body => 'light', :style => 'ipa', :hoppy => 1, :belgian => 1, :local => 1 )
+                :body => 'light', :style => 'ipa', :hoppy => 1, :belgian => 1, :local => 1, :smoky => 1, :bitter => 1,
+                :wheat => 1 )
 beer.save
 beer = Beer.new(:name => 'Centennial IPA', :brewer => 'Haymarket Brewery', :city => 'Chicago',
                 :state => 'IL', :region => 'Midwest', :country => 'USA', :abv => 6.5,
@@ -86,7 +88,8 @@ beer = Beer.new(:name => 'Rive Gauche Biere de Garde', :brewer => 'Haymarket Bre
 beer.save
 beer = Beer.new(:name => 'Tiepolo Blonde', :brewer => 'Haymarket Brewery', :city => 'Chicago',
                 :state => 'IL', :region => 'Midwest', :country => 'USA', :abv => 4.5,
-                :body => 'light', :style => 'blonde', :hoppy => 1, :crisp => 1, :sweet => 1, :fruity => 1, :local => 1 )
+                :body => 'light', :style => 'blonde', :hoppy => 1, :crisp => 1, :sweet => 1, :fruity => 1, 
+                :clean => 1, :nutty => 1, :local => 1 )
 beer.save
 
 ##### Other Beers Served at Haymarket #####

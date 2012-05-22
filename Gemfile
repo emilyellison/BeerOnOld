@@ -5,9 +5,6 @@ gem "meta_search", '1.1.3'
 gem "bootstrap-sass", "~> 2.0.2"
 gem 'bootstrap-tooltip-rails', '0.1'
 gem 'thin'
-	
-# gem 'shortly', '0.3.3'
-# gem 'contact_us', '~> 0.2.1'
 
 group :development do
   gem 'sqlite3', '1.3.5'
